@@ -41,4 +41,5 @@ jobs:
           docker load -i ~/ollama-phi4.tar
           docker stop ollama-container || true
           docker rm ollama-container || true
-          docker run -d --name ollama-container -p 11434:11434 ollama-phi4
+          docker run -d --name ollama-container -p 11434:11434 ollama-phi4 serve
+
