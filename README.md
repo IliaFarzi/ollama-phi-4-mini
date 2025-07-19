@@ -7,7 +7,7 @@ This project demonstrates how to deploy [Phi-4-Mini](https://huggingface.co/micr
 ## 🚀 Features
 
 - 🔁 **Fully automated CI/CD pipeline** using GitHub Actions
-- 🐳 **Dockerized Ollama runtime** with `phi:4-mini` pre-pulled
+- 🐳 **Dockerized Ollama runtime** with `phi4-mini` pre-pulled
 - 🔐 **Secrets-based remote deployment** using SSH
 - 🌍 **Local or remote LLM inference API** on port `11434`
 
@@ -27,7 +27,7 @@ This project demonstrates how to deploy [Phi-4-Mini](https://huggingface.co/micr
 
 ```bash
 curl http://<server-ip>:11434/api/generate -d '{
-  "model": "phi:4-mini",
+  "model": "phi4-mini",
   "prompt": "What is the capital of Canada?"
 }'
 ```
